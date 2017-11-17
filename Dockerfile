@@ -1,6 +1,6 @@
 FROM golang:1.9-alpine
 
-RUN apk --update add git openssh curl && \
+RUN apk --update add git openssh curl rsync && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
